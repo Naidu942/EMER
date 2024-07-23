@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaPhone, FaWhatsapp, FaMapMarkerAlt, FaSms, FaUser, FaVenusMars, FaHeartbeat, FaTint } from 'react-icons/fa';
+import { CgProfile } from "react-icons/cg";
 import './StudentCard.css';
 
 const StudentCard = ({ student }) => {
-  const { image, name, age, gender, bloodGroup, healthConditions, phone, whatsapp, location, sms } = student;
+  const { image, name, mother,father,age, gender, bloodGroup, healthConditions, phone, whatsapp, location, sms } = student;
 
   return (
     <div className="student-card">
@@ -12,6 +13,8 @@ const StudentCard = ({ student }) => {
         <h2 className="student-name">{name}</h2>
       </div>
       <div className="student-card-body">
+      <p className="student-info"><CgProfile /> Mother: {mother}</p>
+      <p className="student-info"><CgProfile /> Father: {father}</p>
         <p className="student-info"><FaHeartbeat /> Age: {age}</p>
         <p className="student-info"><FaVenusMars /> Gender: {gender}</p>
         <p className="student-info"><FaTint /> Blood Group: {bloodGroup}</p>
