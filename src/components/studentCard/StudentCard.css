@@ -1,0 +1,72 @@
+.student-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    max-width: 350px;
+    margin: auto;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  }
+  
+  .student-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .student-card-header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(135deg, #b39ddb, #9575cd);
+    padding: 20px;
+  }
+  
+  .student-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    /* margin-top: -50px; */
+  }
+  
+  .student-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px 0 0;
+  }
+  
+  .student-card-body {
+    padding: 20px;
+  }
+  
+  .student-info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .student-info svg {
+    margin-right: 10px;
+    color: #7e57c2;
+  }
+  
+  .student-card-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    color: #7e57c2;
+    transition: color 0.2s;
+  }
+  
+  .contact-icon:hover {
+    color: #4a148c;
+  }
+  
